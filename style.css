@@ -37,6 +37,7 @@ body {
     background: #1F2937;
     font-size: 24px;
     color: #F9FAF8;
+    padding: 20px;
 }
 
 .sectionOneHeader {
@@ -62,21 +63,12 @@ body {
 .buttonOne {
     background-color: #3882F6;
     color: white;
-    font-size: 18px;
-    padding: 10px 10px;
+    font-size: 1rem;
+    padding: 10px 30px;
     border-radius: 8px;
     text-align: center;
     border: none;
-}
 
-.buttonTwo {
-    background-color: #3882F6;
-    color: white;
-    font-size: 18px;
-    padding: 10px 10px;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px solid white;
 }
 
 .buttonOne:hover {
@@ -84,36 +76,81 @@ body {
     transform: translateY(-2px);
 }
 
-.buttonTwo:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
 .sectionOneImage {
-    background-color: gray;
+    background-color: grey;
+    border-color: #3882F6;
     height: 200px;
-    width: 45 px;
+    width: 400px;
     padding: 20px;
     justify-content: center;
     margin: 20px;
 }
 
 .sectionTwo {
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.sectionTwoHeader {
+    font-size: 32px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.sectionTwoCards {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 32px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardText {
+    justify-content: center;
+}
+
+.cardImage {
+    background-color: white;
+    border: 3px solid #3882F6;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.sectionThree {
     background-color: #E5E7EB;
     font-size: 36px;
     font-weight: 300;
     font-style: italic;
     padding: 32px;
     gap: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.sectionTwoBold {
-    display: flex;
-    justify-content: right;
-    font-size: 18px;
+.sectionThreeBold {
     font-weight: 900;
+    font-size: 28px;
+    justify-content: right;
     font-style: normal;
-
+    text-align: right;
 }
 
 .footer {
@@ -121,7 +158,8 @@ body {
     justify-content: space-between;
     background-color: #3882F6;
     color: white;
-    padding: 10px;
+    padding: 20px;
+    margin: 25px;
 }
 
 .footerBold {
@@ -133,12 +171,10 @@ body {
 }
 
 .footerLeft {
-    justify-content: center;
     align-items: left;
 }
 
 .footerRight {
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -146,9 +182,24 @@ body {
 .footerButton {
     color: white;
     flex-shrink: 0;
+    margin: 30px;
 
 }
 
+.buttonTwo {
+    background-color: #3882F6;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.buttonTwo:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
 a {
     text-decoration: none;
     color: #E5E7EB;
